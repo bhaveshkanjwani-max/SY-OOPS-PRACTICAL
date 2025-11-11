@@ -1,0 +1,38 @@
+#include<iostream>
+#include<vector>
+using namespace std ;
+int main()
+{
+	int n,i;
+	
+	
+    
+ vector<int>v(5,1);
+
+    cout << "vector is : ";
+    for (i = 0; i < v.size(); i++) 
+   {
+        cout << v[i] << " ";
+   }
+
+    int val, index;
+	vector<int>::iterator it;
+    cout << "\nafter multiplying with a scalar value(Uusing iterator) : (";
+    for (it = v.begin(); it != v.end(); it++) 
+    {
+        cout << *it << " ";
+    }
+    cout << ")";
+
+	vector<int>::reverse_iterator rit;
+    
+    cout << "\nafter multiplying with a scalar value(Uusing reverse iterator) : (";
+    for (rit = v.rbegin(); rit != v.rend(); rit++) 
+    {
+        cout << *rit << " ";
+    }
+       cout << ")";
+    
+    
+	return 0 ;
+}
